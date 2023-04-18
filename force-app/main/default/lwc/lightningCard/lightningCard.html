@@ -1,0 +1,10 @@
+<template>
+	<div
+		if:false={_hideCard}
+		class={_selectedClass}
+		onclick={handleClick}>
+		<lightning-card title="Clickable Card">
+			<p>Card content goes here - {cardValue}</p>
+		</lightning-card>
+	</div>
+</template>
