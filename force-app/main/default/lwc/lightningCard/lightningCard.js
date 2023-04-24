@@ -17,13 +17,19 @@ export default class LightningCard extends LightningElement {
 	@api hideShowLMSValue = 'Hide_Show_Logic';
 	@api selectedValue = '';
 
+	//to support custom sizing
+	@api isInCustomFlexContainer = false;
+
 	_singleSelectSubscription;
 	_hideShowSubscription;
 	_hideCard = true;
 	_isSelected = false;
 
 	get _selectedClass() {
-		return 'cardContainer ' + (this._isSelected ? 'selected' : '');
+		let className = 'cardContainer';
+		className += (this._isSelected ? ' selected' : '');
+		className += (this.isInCustomFlexContainer ? ' Custom_Card_Flex_Container' : '');
+		return className;
 	}
 
 	@wire(MessageContext)

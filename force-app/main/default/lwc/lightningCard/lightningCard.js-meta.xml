@@ -20,6 +20,8 @@
                 type="String" role="inputOnly" />
 
             <property name="selectedValue" label="Selected Value" type="String" role="outputOnly" />
+
+			<property name="isInCustomFlexContainer" label="Is This Component Requires Custom Container? If true include 'container' component before parent section." type="Boolean" role="inputOnly" />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

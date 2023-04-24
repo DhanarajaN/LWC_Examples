@@ -1,0 +1,4 @@
+<design:component label="Custom Card Container">
+	<design:attribute name="childWidth" label="Child Conponent Width" default="100%"/>
+	<design:attribute name="childWidthMobile" label="Child Conponent Width For Mobile View" default="100%"/>
+</design:component>
