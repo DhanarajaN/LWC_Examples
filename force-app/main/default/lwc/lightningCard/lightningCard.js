@@ -8,6 +8,8 @@ import {
 import SINGLE_SELECT_LMS from '@salesforce/messageChannel/Single_Select__c';
 import HIDE_SHOW_LMS from '@salesforce/messageChannel/Hide_Show__c';
 
+import { FlowAttributeChangeEvent } from 'lightning/flowSupport';
+
 export default class LightningCard extends LightningElement {
 	//global varibles
 	@api cardValue;
@@ -16,6 +18,12 @@ export default class LightningCard extends LightningElement {
 	@api triggerHideShow = false;
 	@api hideShowLMSValue = 'Hide_Show_Logic';
 	@api selectedValue = '';
+
+	@api customValueToUpdate = '';
+	handleChange(event) {
+		this.customValueToUpdate = event.target.value;
+		this.dispatchEvent(new FlowAttributeChangeEvent('customValueToUpdate', this.customValueToUpdate));
+	}
 
 	//to support custom sizing
 	@api isInCustomFlexContainer = false;

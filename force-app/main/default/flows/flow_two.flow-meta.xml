@@ -178,30 +178,6 @@
             <regionContainerType>SectionWithHeader</regionContainerType>
         </fields>
         <fields>
-            <name>Custom_Container</name>
-            <extensionName>XLC:container</extensionName>
-            <fieldType>ComponentInstance</fieldType>
-            <inputParameters>
-                <name>childWidth</name>
-                <value>
-                    <stringValue>50%</stringValue>
-                </value>
-            </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-            <isRequired>true</isRequired>
-            <storeOutputAutomatically>true</storeOutputAutomatically>
-            <visibilityRule>
-                <conditionLogic>and</conditionLogic>
-                <conditions>
-                    <leftValueReference>Enable_Custom_Container</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <booleanValue>true</booleanValue>
-                    </rightValue>
-                </conditions>
-            </visibilityRule>
-        </fields>
-        <fields>
             <name>Card_with_custom_container</name>
             <fieldText>Card with custom container</fieldText>
             <fieldType>RegionContainer</fieldType>
@@ -239,36 +215,6 @@
                     </visibilityRule>
                 </fields>
                 <fields>
-                    <name>Card_Two</name>
-                    <extensionName>XLC:lightningCard</extensionName>
-                    <fieldType>ComponentInstance</fieldType>
-                    <inputParameters>
-                        <name>cardValue</name>
-                        <value>
-                            <stringValue>Card Two</stringValue>
-                        </value>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>isInCustomFlexContainer</name>
-                        <value>
-                            <booleanValue>true</booleanValue>
-                        </value>
-                    </inputParameters>
-                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-                    <isRequired>true</isRequired>
-                    <storeOutputAutomatically>true</storeOutputAutomatically>
-                    <visibilityRule>
-                        <conditionLogic>and</conditionLogic>
-                        <conditions>
-                            <leftValueReference>Select_Cards_To_Show</leftValueReference>
-                            <operator>Contains</operator>
-                            <rightValue>
-                                <elementReference>Choice_Two</elementReference>
-                            </rightValue>
-                        </conditions>
-                    </visibilityRule>
-                </fields>
-                <fields>
                     <name>Card_Three</name>
                     <extensionName>XLC:lightningCard</extensionName>
                     <fieldType>ComponentInstance</fieldType>
@@ -294,6 +240,36 @@
                             <operator>Contains</operator>
                             <rightValue>
                                 <elementReference>Choice_Three</elementReference>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <fields>
+                    <name>Card_Two</name>
+                    <extensionName>XLC:lightningCard</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>cardValue</name>
+                        <value>
+                            <stringValue>Card Two</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>isInCustomFlexContainer</name>
+                        <value>
+                            <booleanValue>true</booleanValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>Select_Cards_To_Show</leftValueReference>
+                            <operator>Contains</operator>
+                            <rightValue>
+                                <elementReference>Choice_Two</elementReference>
                             </rightValue>
                         </conditions>
                     </visibilityRule>
@@ -339,6 +315,50 @@
             <isRequired>false</isRequired>
             <regionContainerType>SectionWithHeader</regionContainerType>
         </fields>
+        <fields>
+            <name>Custom_Container</name>
+            <extensionName>XLC:container</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>childWidth</name>
+                <value>
+                    <stringValue>33%</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>childWidthMobile</name>
+                <value>
+                    <stringValue>100%</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Enable_Custom_Container</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>testCard001</name>
+            <extensionName>XLC:lightningCard</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>cardValue</name>
+                <value>
+                    <stringValue>value 00000001</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
@@ -350,4 +370,14 @@
         </connector>
     </start>
     <status>Draft</status>
+    <variables>
+        <name>cardValue000001</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>testCard001.customValueToUpdate</elementReference>
+        </value>
+    </variables>
 </Flow>
