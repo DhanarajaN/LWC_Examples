@@ -2,18 +2,17 @@
 	<aura:attribute name="childWidth" type="String" default="100%" access="global"></aura:attribute>
 	<aura:attribute name="childWidthMobile" type="String" default="100%" access="global"></aura:attribute>
 	<aura:html tag="style">
-	flowruntime-screen-field[class="column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"] flowruntime-base-section > div:has(.Custom_Card_Flex_Container) {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	flowruntime-screen-field[class="column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"] flowruntime-base-section > div > *:has(.Custom_Card_Flex_Container) {
-		width: {!v.childWidth};
-	}
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-		flowruntime-screen-field[class="column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"] flowruntime-base-section > div > *:has(.Custom_Card_Flex_Container) {
-			width: {!v.childWidthMobile};
+		flowruntime-screen-field[class="column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"] flowruntime-base-section > div:has(.Custom_Card_Flex_Container) {
+			display: flex;
+			flex-wrap: wrap;
 		}
-	}
-
-</aura:html>
+		flowruntime-screen-field[class="column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"] flowruntime-base-section > div > *:has(.Custom_Card_Flex_Container) {
+			width: {!v.childWidth};
+		}
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+			flowruntime-screen-field[class="column slds-col slds-size_1-of-1 slds-medium-size_12-of-12"] flowruntime-base-section > div > *:has(.Custom_Card_Flex_Container) {
+				width: {!v.childWidthMobile};
+			}
+		}
+	</aura:html>
 </aura:component>
