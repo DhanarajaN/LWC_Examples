@@ -8,6 +8,6 @@
 7.  Deploy the code.
 8.  Work on changes.
 9.  Retrieve the code from org if required.
-10. Commit the changes after verifying the files and changes.
+10. Commit the changes after verifying the files and changes. (In Admin profile, remove <user premissions>, keep only object, apex, field, layout permissions)
 11. Push the changes to your forked repo.
 12. Create a PR from fork repo to original.
