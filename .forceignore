@@ -8,7 +8,5 @@ package.xml
 **/jsconfig.json
 **/.eslintrc.json
 
-**/appMenus
-
 # LWC Jest
 **/__tests__/**
