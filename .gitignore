@@ -40,3 +40,4 @@ $RECYCLE.BIN/
 
 # Local environment variables
 .env
+.sfdx/sfdx-config.json
