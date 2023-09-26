@@ -1,0 +1,12 @@
+.sf
+.project
+.settings
+salesforce.schema
+Referenced Packages
+.sfdx
+.vscode
+.DS_Store
+*/.DS_Store
+mdapi
+force-app/main/default/lwc/jsconfig.json
+*Questionnaire_Demo*
