@@ -26,5 +26,5 @@ Store all the component name and description here. This file will be used to und
      Default Layout for XYZ object
   6. XYZ
      Custom Tab
-     Custom object tab for XYZ objects
+     Custom object tab for XYZ object
 </pre>
