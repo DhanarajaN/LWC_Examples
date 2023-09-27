@@ -9,10 +9,6 @@ Store all the component name and description here. This file will be used to und
 </pre>
 
 <pre>
-test
-Test
-
-
   1. Admin Profile
      Profile
      File to store all permission required for Admin User.
@@ -30,5 +26,8 @@ Test
      Default Layout for XYZ object
   6. XYZ
      Custom Tab
-     Custom object tab for XYZ object
+     Custom object tab for XYZ
+  7. ABC
+     Custom Object
+     Custom object to save ABC Info
 </pre>
