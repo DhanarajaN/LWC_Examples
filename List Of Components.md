@@ -29,4 +29,5 @@ Store all the component name and description here. This file will be used to und
   6. XYZ
      Custom Tab
      Custom object tab for XYZ object
+	 sadmaksd
 </pre>
