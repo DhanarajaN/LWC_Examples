@@ -30,4 +30,7 @@ Store all the component name and description here. This file will be used to und
   7. ABC
      Custom Object
      Custom object to save ABC Info
+  8. App One
+     Custom Application
+     Custom application for ABC Package
 </pre>
