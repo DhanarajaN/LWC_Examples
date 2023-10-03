@@ -15,7 +15,7 @@ Store all the component name and description here. This file will be used to und
   2. XYZ
      Custom Object
      Custom Test Object
-  3. Field To Delete
+  3. New Field
      Custom Field
      Custom Field for XYZ Object
   4. All
