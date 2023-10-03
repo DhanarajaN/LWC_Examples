@@ -3,7 +3,7 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
-        <field>XYZ__c.New_Field__c</field>
+        <field>XYZ__c.Field_To_Delete__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
@@ -23,5 +23,4 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <userLicense>Salesforce</userLicense>
-
 </Profile>

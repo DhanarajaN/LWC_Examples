@@ -12,7 +12,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>New_Field__c</field>
+                <field>Field_To_Delete__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
